@@ -5,7 +5,7 @@ import _ from 'lodash';
 export default class Chart extends Component {
 
     average(data) {
-        return _.sum(data)/data.length;
+        return _.round(_.sum(data)/data.length, 2);
     }
 
     render() {
